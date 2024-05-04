@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:text="Calcultor"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:text="3 + 3"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvOperation"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="end|center_vertical"
+        android:text="0"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tvOperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCalculator"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:text="Addition (+)"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/tvOperator"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:useDefaultMargins="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="1"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="2"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="3"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button_operator"
+            android:text="+"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="4"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="5"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="6"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button_operator"
+            android:text="-"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="7"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="8"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="9"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button_operator"
+            android:text="*"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button_clear"
+            android:text="C"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button"
+            android:text="0"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button_operator"
+            android:text="="
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_button_operator"
+            android:text="/"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+
+    </GridLayout>
+
+</RelativeLayout>
